@@ -39,5 +39,30 @@ PE P13(a12, b9, a13, b13, clk, reset, C13);
 PE P14(a13, b10, a14, b14, clk, reset, C14);
 PE P15(a14, b11, a15, b15, clk, reset, C15);
 
+always @(posedge clk)begin
+    
+if(reset)begin
 
+    count <= 0;
+    done <= 0;
+end
+
+else begin
+    if(count == 9) begin
+    count <= 0;
+    done <= 1;
+    
+
+    end
+
+    else begin
+    count <= count + 1;
+    done <= 0;
+    
+    end
+end 
+
+
+end
+  
 endmodule
