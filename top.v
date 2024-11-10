@@ -1,25 +1,3 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/09/2024 10:48:47 PM
-// Design Name: 
-// Module Name: top
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module top#(parameter  REG_WIDTH = 8, OUT_WIDTH = REG_WIDTH*2)(clk, reset, A0, A1, A2, A3, B0, B1, B2, B3);
 
 input [REG_WIDTH-1:0] A0, A1, A2, A3, B0, B1, B2, B3;
